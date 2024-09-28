@@ -1,0 +1,7 @@
+i {
+  color:black;
+}
+canvas {
+  max-width: 100% !important; /* Asegúrate de que el canvas no exceda el ancho del contenedor */
+  height: 400px; /* Ajusta la altura según sea necesario */
+}

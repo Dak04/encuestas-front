@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.toast-success {
+    background-color: #279da5 !important;  /* Color verde */
+    color: white !important;                /* Color de texto blanco */
+}
+.toast {
+    position: fixed !important;  /* Fuerza la posición a ser fija */
+}
+  
+.toast-top-right {
+    top: 12px !important;        /* Ajusta la distancia desde el top */
+    right: 12px !important;      /* Ajusta la distancia desde el right */
+}
