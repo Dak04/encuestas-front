@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MusicStyleService {
-  private apiUrl = 'http://localhost:8080/demo/api/music-styles'; // URL del backend para obtener estilos musicales
+  private apiUrl = 'http://localhost:8080/api/music-styles'; // URL del backend para obtener estilos musicales
 
   constructor(private http: HttpClient) {}
 

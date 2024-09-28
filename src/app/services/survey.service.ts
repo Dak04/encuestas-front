@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SurveyService {
-  private apiUrl = 'http://localhost:8080/demo/guardarencuesta'; // La URL del backend
+  private apiUrl = 'http://localhost:8080/api/guardarencuesta'; // La URL del backend
 
   constructor(private http: HttpClient) {}
 
