@@ -22,6 +22,9 @@ export class SurveyComponent implements OnInit {
   surveyForm: FormGroup;
   musicStyles: string[] = [];
 
+  respEncuestaRespondida ="Encuesta guardada";
+  respCorreoRepetido ="Correo con encuesta respondida";
+
   constructor(private formBuilder: FormBuilder, private router: Router,
     private musicStyleService: MusicStyleService,
     private surveyService: SurveyService,
@@ -54,7 +57,11 @@ export class SurveyComponent implements OnInit {
         response => {
           console.log('Encuesta enviada correctamente:', response);
           // Aquí puedes agregar lógica para notificar al usuario
-          this.toastr.success(response, 'Éxito'); // Mensaje de éxito
+          if(response ==='true'){
+            this.toastr.success('Correo registrado','Encuesta enviada');
+          }else{
+            this.toastr.info('Correo ya esta registrado', 'Encuesta enviada'); // Mensaje de éxito
+          }          
           this.surveyForm.reset();
           this.router.navigate(['results']);
         },

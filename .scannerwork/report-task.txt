@@ -1,0 +1,6 @@
+projectKey=encuestas-front
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=encuestas-front
+ceTaskId=e4c46ba2-cbae-4ae7-a009-45be4adf7aa3
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e4c46ba2-cbae-4ae7-a009-45be4adf7aa3
